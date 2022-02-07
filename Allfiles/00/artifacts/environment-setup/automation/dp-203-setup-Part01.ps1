@@ -124,6 +124,9 @@ $max_index = $locations.Count - 1
 $rand = (0..$max_index) | Get-Random
 $random_location = $locations.Get($rand).Location
 
+#temp change as south central us compute ressource not available
+$random_location = "westeurope"
+
 Write-Host "Try to create a SQL Database resource to test for capacity constraints";
 # Try to create a SQL Databasde resource to test for capacity constraints
 $success = 0
